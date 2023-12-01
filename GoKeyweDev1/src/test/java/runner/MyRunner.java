@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/features/mylisting.feature", 
-dryRun = true
+dryRun = !true
 ,glue= {"stepdefinitions","hooks"}
 //,tags = "@smoke"
 )

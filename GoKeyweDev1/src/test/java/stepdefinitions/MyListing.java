@@ -43,13 +43,23 @@ public class MyListing extends BaseClass {
 	}
 	
 	@When("User enters the property datas for adding the exclusives")
-	public void user_enters_the_property_datas_for_adding_the_exclusives() {
-
+	public void user_enters_the_property_datas_for_adding_the_exclusives() throws InterruptedException {
+		driver.findElement(By.name("address")).sendKeys("15310 Santella CT, LOS GATOS, CA 95032");
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//div[@class='position-absolute SerachDropdown1']//p[1]")).click();
+		Thread.sleep(2000);
+		WebElement dropdown = driver.findElement(By.name("listing_status"));
+		Select select = new Select(dropdown);
+		select.selectByVisibleText("Draft");
+		Thread.sleep(2000);
+		
 	}
 	
 	@Then("User clicks save then that property is displayed in the mylisting page")
 	public void user_clicks_save_then_that_property_is_displayed_in_the_mylisting_page() {
-
+		driver.findElement(By.xpath("(//button[@type='button'])[1]")).click();
+		driver.findElement(By.xpath("(//button[@type='button'])[1]")).getText();
+		
 	}
 
 }
