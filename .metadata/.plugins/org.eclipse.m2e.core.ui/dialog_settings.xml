@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Jayakumar\eclipse-workspace\Sample"/>
 			<item value="C:\Users\Jayakumar\eclipse-workspace\TestRunsMainProject\src\test\resources"/>
 			<item value="C:\Users\Jayakumar\eclipse-workspace\GoKeyweMainProject\src\test\java\stepdefinitions\Login.java"/>
 			<item value="C:\Users\Jayakumar\eclipse-workspace\TestRunsProject\src\test\java\runner\TestRunner.java"/>
@@ -21,7 +22,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
-		<item key="catalog" value="internal"/>
+		<item key="catalog" value="https://repo1.maven.org/maven2/archetype-catalog.xml"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -33,16 +34,18 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="org.tws.DataDrivenTesting"/>
 			<item value="org.ts.Demo"/>
 			<item value="org.tws.GoKeywe"/>
 			<item value="org.tws"/>
 			<item value="org.tws.TestRunsMainProject"/>
 		</list>
 		<list key="groupId">
-			<item value="org.ts"/>
 			<item value="org.tws"/>
+			<item value="org.ts"/>
 		</list>
 		<list key="artifactId">
+			<item value="DataDrivenTesting"/>
 			<item value="Demo"/>
 			<item value="GoKeywe"/>
 			<item value="TestRunsMainProject"/>

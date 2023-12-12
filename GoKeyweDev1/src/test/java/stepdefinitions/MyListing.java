@@ -21,7 +21,7 @@ public class MyListing extends BaseClass {
 	public void user_clicks_the_required_dropdown_and_then_the_results_are_displayed() {
 
 		WebElement dropdownField = driver.findElement(By.id("calender"));
-//		dropdownField.click();
+		// dropdownField.click();
 		Select dropdown = new Select(dropdownField);
         dropdown.selectByVisibleText("Sold"); 
         
@@ -36,6 +36,7 @@ public class MyListing extends BaseClass {
             System.out.println(option.getText());
         }
 	}
+	
 	@When("User clicks Add Listing button")
 	public void user_clicks_add_listing_button() {
 		
